@@ -19,6 +19,8 @@
     '^org\\.gnu\\.emacs$',
     // JetBrains tools
     '^com\\.jetbrains',
+    // Android Studio
+    '^com\\.google\\.android\\.studio$',
     // Microsoft VSCode
     '^com\\.microsoft\\.VSCode$',
     // Sublime Text
