@@ -43,11 +43,11 @@
   //
   // key_is_modifier (boolean, optional)
   //   removes entire 'modifiers' object; only use when <key> is a modifier itself
-  input(key, modifiers=null, key_is_modifier=false):: {
+  input(key, modifiers=null, key_is_modifier=false, no_optional=false):: {
     key_code: key,
     [if key_is_modifier then null else 'modifiers']: {
       [if modifiers != null then 'mandatory']: modifiers,
-      optional: ['any'],
+      [if !no_optional then 'optional']: ['any'],
     },
   },
 
